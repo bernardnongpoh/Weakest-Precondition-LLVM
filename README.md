@@ -19,6 +19,14 @@ bin directory of your build and run cmake build . --target install .
 TODO:
  running the instnamer pass on IR, which will give an explicit name to everything, so we don't need to worry about finding implicit names.
 
+To compile go to cmake-build-debug
+
+$cmake ..
+$make
+
+
+If Z3 is installed everything will be fine.
+
 
 
 
