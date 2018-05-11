@@ -1,0 +1,6 @@
+<<<<<<< HEAD
+opt -view-cfg programs/hello.bc
+=======
+
+opt -view-cfg benchmarks/hello.bc
+>>>>>>> 624830f98578ab78a98b3194704d2feaa12e51b3

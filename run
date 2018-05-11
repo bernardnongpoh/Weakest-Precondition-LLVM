@@ -1,0 +1,11 @@
+<<<<<<< HEAD
+opt   -loop-unroll -instnamer programs/hello.bc -o programs/hello.bc
+opt    -load build/Debug/libIRPassSCC.so -bottomUp programs/hello.bc -o programs/hello.bc
+clang -g programs/hello.bc -o hello
+=======
+clang -c -O1 -emit-llvm  benchmarks/hello.c   -o benchmarks/hello.bc
+opt   -loop-unroll -instnamer -load build/Debug/libIRPassSCC.so -bottomUp benchmarks/hello.bc -o benchmarks/hello.bc
+clang benchmarks/hello.bc -o benchmarks/hello
+>>>>>>> 624830f98578ab78a98b3194704d2feaa12e51b3
+
+

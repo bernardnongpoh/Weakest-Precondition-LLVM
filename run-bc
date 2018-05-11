@@ -1,0 +1,3 @@
+opt -loop-unroll -instnamer programs/biobench/tiger/TIGR_Assembler.bc -o programs/biobench/tiger/TIGR_Assembler.bc
+opt -load build/Debug/libIRPassSCC.so -bottomUp programs/biobench/tiger/TIGR_Assembler.bc -o programs/biobench/tiger/TIGR_Assembler.bc
+clang -g programs/biobench/tiger/TIGR_Assembler.bc -o Approx_TIGR_Assembler
